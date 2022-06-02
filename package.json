@@ -1,0 +1,11 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "description": "Nada que decir",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
