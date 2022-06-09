@@ -1,6 +1,8 @@
 var http = require('http');
 var server = http.createServer();
- 
+let port_number = process.env.PORT || 3000;
+// app.listen(port_number);
+
 function mensaje(petic, resp) {
 	// resp.writeHead(200, {'content-type': 'text/plain'});
 	// resp.write('App prueba heroku, Segunda parte agregado');
@@ -15,6 +17,6 @@ function mensaje(petic, resp) {
 }
 server.on('request', mensaje);
  
-server.listen(5000, function () {
+server.listen(port_number, function () {
   	console.log('La Aplicación está funcionando en el puerto 5000');
 });
